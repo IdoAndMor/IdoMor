@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <merge  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layoutDirection="ltr">
+
+
+        <Button
+            android:id="@+id/forgetPasswordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fcfe711f"
+            android:text="Send"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/msgTextBox"
+            android:layout_alignEnd="@+id/msgTextBox" />
+
+        <TextView
+            android:id="@+id/textViewToChange"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_above="@+id/myconButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:bufferType="spannable"
+            android:ellipsize="end"
+            android:singleLine="false"
+            android:textSize="@dimen/abc_action_bar_progress_bar_size" />
+
+        <ImageView
+            android:id="@+id/imageTxt"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignEnd="@+id/textViewToChange"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/textViewToChange"
+            android:layout_alignWithParentIfMissing="false"
+            android:scrollbars="vertical|horizontal"
+            android:visibility="invisible" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fcfe711f"
+            android:text="New MyCon"
+            android:layout_alignTop="@+id/forgetPasswordButton"
+            android:id="@+id/createButton" />
+
+        <ZoomButton
+            android:id="@+id/myconButton"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="#ffffff"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="invisible"
+            android:layout_below="@+id/msgTextBox"
+            android:layout_centerHorizontal="true" />
+
+
+        <Button
+            android:id="@+id/historyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="history"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/msgTextBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="320dp"
+            android:imeOptions="actionSend|flagNoEnterAction"
+            android:inputType="textShortMessage|textCapSentences|textMultiLine"
+            android:singleLine="false"
+            android:lines="5"
+            android:layout_above="@+id/forgetPasswordButton"
+            android:background="@drawable/send_text_edit"
+            android:gravity="top"
+            android:layout_toRightOf="@+id/textViewToChange"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/historyButton" />
+        <include
+            android:id="@+id/mycons_keyboard_ref"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            layout="@layout/mycons_keyboard"
+            android:layout_below="@+id/forgetPasswordButton" />
+        <ZoomButton
+            android:id="@+id/androidKeyboardButton"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="#ffffff"
+            android:src="@mipmap/keyboard"
+            android:visibility="visible"
+            android:layout_below="@+id/msgTextBox"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:id="@+id/clrButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/forgetPasswordButton"
+            android:layout_alignStart="@+id/forgetPasswordButton" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/orange"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textViewToChange"
+            android:layout_toLeftOf="@+id/clrButton"
+            android:layout_toStartOf="@+id/clrButton"
+            android:layout_alignBottom="@+id/clrButton" />
+    </RelativeLayout>
+</merge>

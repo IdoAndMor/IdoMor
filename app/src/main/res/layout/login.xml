@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layoutDirection="ltr">
+
+
+        <Button
+            android:id="@+id/forgetPasswordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fcfe711f"
+            android:text="forget yor password?"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/textViewToChange"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:bufferType="spannable"
+            android:ellipsize="end"
+            android:singleLine="false"
+            android:textSize="@dimen/abc_action_bar_progress_bar_size" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fcfe711f"
+            android:text="login"
+            android:id="@+id/loginButton"
+            android:layout_below="@+id/badPasswordTextView"
+            android:layout_centerHorizontal="true" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/orange"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textViewToChange"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Login by E-mail or Phone"
+            android:id="@+id/enterPhoneTextView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/imageView2"
+            android:layout_toRightOf="@+id/textViewToChange"
+            android:layout_toEndOf="@+id/textViewToChange" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Password"
+            android:id="@+id/passwordTextView"
+            android:layout_below="@+id/emailOrPhoneEditText"
+            android:layout_alignLeft="@+id/emailOrPhoneEditText"
+            android:layout_alignStart="@+id/emailOrPhoneEditText" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/loginPasswordEditText"
+            android:layout_below="@+id/passwordTextView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/textViewToChange"
+            android:layout_toEndOf="@+id/textViewToChange" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fcfe711f"
+            android:text="Sign Up"
+            android:id="@+id/SignUpButton"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/textViewToChange"
+            android:layout_toEndOf="@+id/textViewToChange" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailOrPhoneEditText"
+            android:layout_below="@+id/enterPhoneTextView"
+            android:layout_toRightOf="@+id/textViewToChange"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/badPasswordTextView"
+            android:layout_below="@+id/loginPasswordEditText"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/textViewToChange"
+            android:layout_toEndOf="@+id/textViewToChange"
+            android:textColor="#f80101" />
+    </RelativeLayout>
+</merge>
