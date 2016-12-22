@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="screenBackground">
+        <item name="android:background">#ef865d</item>
+    </style>
+
+    <style name="menuButton">
+        <item name="android:background">@drawable/roundbutton</item>
+    </style>
+
+</resources>

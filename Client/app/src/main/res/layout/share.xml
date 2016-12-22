@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myconToShareImageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/myconToShareImageView"
+        android:text="Name / Nickname:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameTextView"
+        android:layout_alignStart="@+id/nameTextView"
+        android:layout_below="@+id/nameTextView"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/DescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tagsEditText"
+        android:layout_alignStart="@+id/tagsEditText"
+        android:layout_below="@+id/tagsEditText"
+        android:text="Category"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/myconToShareTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/myconToShareImageView"
+        android:layout_alignLeft="@+id/myconToShareImageView"
+        android:layout_alignStart="@+id/myconToShareImageView"
+        android:text="MyCon to share:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/myconToShareImageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_above="@+id/shareButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myconToShareImageView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/myconToShareImageView"
+        android:background="#fcfe711f"
+        android:text="Share!" />
+
+    <Button
+        android:id="@+id/cancleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/myconToShareImageView"
+        android:layout_alignRight="@+id/myconToShareImageView"
+        android:layout_alignTop="@+id/shareButton"
+        android:background="#fcfe711f"
+        android:text="Cancle" />
+
+    <TextView
+        android:id="@+id/tagsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameEditText"
+        android:layout_alignStart="@+id/nameEditText"
+        android:layout_below="@+id/nameEditText"
+        android:text="Tags:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/tagsEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tagsTextView"
+        android:layout_alignStart="@+id/tagsTextView"
+        android:layout_below="@+id/tagsTextView"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tagsEditText"
+        android:layout_alignLeft="@+id/DescriptionTextView"
+        android:layout_alignRight="@+id/tagsEditText"
+        android:layout_alignStart="@+id/DescriptionTextView"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_below="@+id/DescriptionTextView" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminateDrawable="@drawable/circular"
+        android:max="100"
+        android:progress="20"
+        android:visibility="invisible" />
+
+</RelativeLayout>

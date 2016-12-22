@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mycons_web.mycons"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <!--
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE"/>
+    -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" >
+    </uses-permission>
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" >
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.mycons_web.mycons.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rec.photoeditor.MenuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rec.photoeditor.EditorActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rec.photoeditor.editoractivity.BrightnessActivity"
+            android:label="@string/brightness"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rec.photoeditor.editoractivity.CropActivity"
+            android:label="@string/crop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rec.photoeditor.CameraPermission"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rec.photoeditor.editoractivity.RotateActivity"
+            android:label="@string/rotate"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mycons_web.mycons.History"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.mycons_web.mycons.Login"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.mycons_web.mycons.DownloadMycons"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.mycons_web.mycons.SendMessage"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.mycons_web.mycons.ShareMycon"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.mycons_web.mycons.MyconsKeyboard"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name" />
+        <!--android:theme="@style/AppTheme.CustomTheme"-->
+        <activity
+            android:name="com.mycons_web.mycons.PopupDelete"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name="com.mycons_web.mycons.MyconButtonMenu"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name="com.mycons_web.mycons.ReportMycon"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name="com.mycons_web.mycons.DownloadOption"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name="com.mycons_web.mycons.NewMyconMenu"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.CustomTheme" />
+
+        <activity
+            android:name="com.search.BingSearch"
+            android:label="@string/app_title" >
+        </activity>
+
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+    <!--
+     ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+-->
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+
+</manifest>

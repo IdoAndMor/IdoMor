@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<!--    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send new msg"
+        android:id="@+id/sendNewMsgFromKeyboardbutton"
+        android:layout_column="23"
+        android:background="#fc5f05"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="create MyCon"
+        android:id="@+id/createMyconButton"
+        android:background="#fc5f05"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/myconsIconsImage"
+        android:src="@mipmap/orange"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/createMyconButton"
+        android:layout_toEndOf="@+id/createMyconButton"
+        android:layout_alignTop="@+id/createMyconButton" />
+-->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView3"
+        android:fillViewport="false">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/keyboardTableLayout" />
+    </ScrollView>
+
+</RelativeLayout>
